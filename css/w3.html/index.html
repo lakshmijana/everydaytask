@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b{
+            background-color: black;
+            border: 1px solid black;
+            width: 1100px;
+        }
+        #ph{
+            background-color: tomato;
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 50px;
+            margin-top: 40px;
+            border-radius: 10px;
+            
+            display: inline-block;
+        }
+        button{
+            background-color: black;
+            color: azure;
+            border-radius: 13px;
+        }
+        #jq{
+            background-color:goldenrod ;
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding-left: 40px;
+           
+        }
+        #java{
+            background-color:white;
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 50px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding-left: 40px;
+            
+        }
+        #c{
+            background-color:aqua;
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding-left: 40px;
+        }
+        #w3{
+            background-color:rgb(37, 137, 137);
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 50px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding-left: 40px;
+        }
+        #boot{
+            /*background-color:rgb(220, 214, 202);
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;*/
+            background-color:rgb(220, 214, 202);
+            height: 150px;
+            width: 350px;
+            text-align: center;
+           padding: 40px;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding-left: 40px;
+           /* padding-left: 40px;*/
+        }
+        #H{
+            background-color: palevioletred;
+            text-align: center;
+            height: 60px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           align-items: center; /center vertically/
+           justify-content: center;/center horizantally/
+           display: flex;
+           display: inline-block;
+           border-radius: 5px;
+           padding-top: 15px;
+        }
+        .C{
+            background-color: rgb(199, 216, 112);
+            text-align: center;
+           
+            height:60px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           align-items: center; /center vertically/
+           justify-content: center;/center horizantally/
+         border-radius: 5px;
+        
+         display: inline-block;
+         padding-top: 15px;
+        }
+        .r{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .k{
+            background-color: rgb(188, 170, 170);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .N{
+            background-color: rgb(13, 118, 113);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .R{
+            background-color: rgb(176, 145, 145);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        
+        .json{
+            background-color: rgb(120, 112, 112);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        
+        .vue{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        
+        .my{
+            background-color: rgb(117, 21, 21);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        
+        .xm{
+            background-color: rgb(245, 245, 245);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .sass{
+            background-color: rgb(128, 31, 66);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+   
+        .icon{
+            background-color: rgb(74, 52, 52);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .rwd{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .grpa{
+            background-color: rgb(70, 14, 139);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .svg{
+            background-color: rgb(193, 156, 35);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .Canvas{
+            background-color: rgb(110, 10, 79);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .berry{
+            background-color: rgb(90, 31, 162);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .cyber{
+            background-color: rgb(192, 185, 232);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .color{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .git{
+            background-color: rgb(126, 26, 83);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .mat{
+            background-color: rgb(17, 90, 143);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .num{
+            background-color: rgb(148, 164, 56);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .pan{
+            background-color: rgb(5, 68, 67);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .sc{
+            background-color: rgb(91, 36, 36);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .as{
+            background-color: rgb(12, 6, 21);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .ang{
+            background-color: rgb(245, 245, 245);
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .app{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .go{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .type{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .djan{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .mon{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .stat{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .data{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .typing{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .how{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .Code{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .spaces{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .post{
+            background-color: whitesmoke;
+            margin-left: 50px;
+            height: 60px;
+            width: 180px;
+            text-align: center;
+            padding-top: 12px;
+            display: inline-block;
+        }
+        .ex{
+            background-color: rgb(199, 216, 112);
+            text-align: center;
+           
+            height:80px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           /* align-items: center; /center vertically/
+           justify-content: center;/center horizantally/ */
+         border-radius: 5px;
+        
+         display: inline-block;
+         padding-top: 15px;
+          
+           
+        }
+      .ds { background-color: rgb(199, 216, 112);
+            text-align: center;
+           
+            height:80px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           /* align-items: center; /center vertically/
+           /* justify-content: center;/center horizantally/ */
+         border-radius: 5px; 
+        
+         display: inline-block;
+         padding-top: 15px;
+       }
+       .ml{
+        background-color: rgb(199, 216, 112);
+            text-align: center;
+           
+            height:80px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           /* align-items: center; /center vertically/
+           justify-content: center;/center horizantally/ */
+         border-radius: 5px;
+        
+         display: inline-block;
+         padding-top: 15px;
+       }
+       .ai{
+        background-color: rgb(199, 216, 112);
+            text-align: center;
+           
+            height:80px;
+            width: 420px;
+           margin-left: 50px;
+           margin-top: 40px;
+           /* align-items: center; /center vertically/
+           justify-content: center;/center horizantally/ */
+         border-radius: 5px;
+        
+         display: inline-block;
+         padding-top: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div id="b">
+        <div id="ph">
+        <h2 >PHP 
+        </h2>
+        <p>A web server programming language</p>
+        <button>Learn PHP</button>
+             </div>
+             <div id="jq">
+                <h2>jQuery</h2>
+                <p>A JS library for developing web pages</p>
+                <button>Learn jQuery</button>
+             </div>
+             <div id="java">
+                <h2>JAVA</h2>
+                <p>A programming language</p>
+                <button>Learn JAVA</button>
+             </div>
+             <div id="c">
+                <h2>C++</h2>
+                <p>A programming language</p>
+                <button>Learn C++</button>
+             </div>
+
+             <div id="w3">
+                <h2> W3.CSS</h2>
+                <p>A CSS framework for faster and better responsive web pages</p>
+                <button>Learn W3.CSS</button>
+             </div>
+             <div id="boot">
+                <h2>Bootstrap</h2>
+                <p>A CSS framework for designing better web pages</p>
+                <button>Learn Bootstrap</button>
+             </div>
+            
+             <h1 id="H">C</h1> 
+             <h1 class="C">C#</h1>
+            <h1 class="r">R</h1>
+            <h1 class="k">kotlin</h1>
+            <h1 class="N">Node.js </h1>
+            <h1 class="R">React</h1>
+            <h1 class="json">JSON</h1>
+            <h1 class="vue">Vue </h1>
+            <h1 class="my">MySQL</h1>
+            <h1 class="xm">XML</h1>
+       <h1 class="sass">Sass</h1>
+       <h1 class="icon">Icons</h1>
+       <h1 class="rwd">RWD </h1>
+       <h1 class="grpa">Graphics</h1>
+       <h1 class="svg">SVG</h1>
+       <h1 class="Canvas">Canvas</h1>
+       <h2 class="berry">Raspberry Pi</h2>
+       <h2 class="cyber">Cyber Security</h2>
+       <h1 class="color">Colors</h1>
+       <h1 class="git">Git</h1>
+       <h1 class="mat">Matplotlib</h1>
+       <h1 class="num">Numpy</h1> 
+       <h1 class="pan">Pandas</h1> 
+       <h1 class="sc">SciPY</h1>
+       <h1 class="as">ASP</h1>
+       <h1 class="ang">AngularJS</h1> 
+       <h1 class="app">AppML</h1> 
+       <h1 class="go">GO</h1> 
+       <h1 class="type">TypeScript</h1> 
+       <h1 class="djan">Django</h1> 
+       <h1 class="mon">MongoDB</h1>  
+       <h1 class="stat">Statistics</h1> 
+       <h1 class="data">Data Science</h1> 
+       <h2 class="typing">Typing Speed</h2> 
+       <h1 class="how">HowTo</h1> 
+       <h1 class="Code">Code Game</h1> 
+       <h1 class="spaces">Spaces</h1> 
+       <h1 class="post">PostgreSQL</h1> 
+       <h1 class="ex">Excel</h1>
+       <h2 class="ds">DSA- data structure and algorityms</h2>
+       <h1 class="ml">Mechine Learning</h1>
+       <h1 class="ai">Artificial Intellignce</h1>
+    </div>
+
+</body>
+</html>
