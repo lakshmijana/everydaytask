@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+   border: 2px solid black;
+    display:inline-block; 
+   height:200px;
+   width:250px;
+   text-align: center;  
+    padding-top:80px;
+    margin:40px;  
+    border-radius: 50px;
+    background-color: aqua;
+    box-shadow: 3px 3px 5px 1px black,-3px -3px 5px 1px black;
+}
+.xt:hover{
+    transform:translateX(60px);
+}
+.yt:hover{
+    transform:translateY(60px);
+}
+.xyt:hover{
+
+ transform:translate(60px,60px);
+}
+
+.trans{
+    /* border:2px solid yellow; */
+     display: inline-block; 
+     padding:50px; 
+      margin-left: 20%;  
+     /* background-color: brown; */
+     
+    
+}
+
+.scale{
+    
+      display: inline-block;  
+    padding:50px;
+     margin-left: 20%; 
+     
+    
+}
+.xs:hover{
+    transform:scaleX(1.5);
+
+}
+.ys:hover{
+    transform:scaleY(1.5);
+    
+}
+.xys:hover{
+    transform:scale(1.5,1.5);
+    
+}
+.skew{
+    
+     display: inline-block; 
+    padding:50px;
+     margin-left: 20%; 
+   
+    
+}
+.xk:hover{
+    transform: skewX(30deg);
+}
+.yk:hover{
+    transform: skewY(30deg);
+}
+.xyk:hover{
+    transform: skew(30deg,30deg);
+}
+.rotate{
+
+      display: inline-block;  
+    padding:50px;
+     margin-left: 20%; 
+
+    
+}
+.xr:hover{
+    transform: rotate(90deg);
+}
+.yr:hover{
+    transform: rotate(270deg);
+}
+.xyr:hover{
+    transform: rotate(180deg);
+}
+.xyzr:hover{
+    transform: rotate(60deg);
+}
+.main{
+    background-image: url(https://getwallpapers.com/wallpaper/full/e/f/0/751753-hd-texture-backgrounds-1920x1080-download.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color:white;
+    font-size: 50px;
+
+}
+
+
+        </style>
+</head>
+<body>
+    <div class="main">
+    <div class="trans">
+        <h1>TRANSFORM PROPERTIES</h1>
+        <p class="xt">X-AXIS</p>
+        <p class="yt">Y-AXIS</p>
+        <p class="xyt">X AND Y AXIS</P>
+        </div>       
+        <div class="scale">
+            <h1>SCALE PROPERTIES</h1>
+            <p class="xs">X-AXIS</p>
+            <p class="ys">Y-AXIS</p>
+            <p class="xys">X AND Y AXIS</P>
+            </div>
+
+            <div class="skew">
+                <h1>Skew PROPERTIES</h1>
+                <p class="xk">X-AXIS</p>
+                <p class="yk">Y-AXIS</p>
+                <p class="xyk">X AND Y AXIS</P>
+                </div>
+
+                <div class="rotate">
+                    <h1>ROTATE PROPERTIES</h1>
+                    <p class="xr">90deg</p>
+                    <p class="yr">270deg</p>
+                    <p class="xyr">180deg</P><br>
+                        <p class="xyzr">60deg</P>
+                    </div>
+    
+                </div>
+        
+</body>
+</html>
