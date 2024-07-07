@@ -19,15 +19,17 @@
 }
 .xt:hover{
     transform:translateX(60px);
-     transition:all 5s linear 3s ; 
-    /* transition: transform 0.5s ease-in-out; */
+     transition:all 5s linear  ; 
+     /* transition: transform 0.5s ease-in-out;  */
 }
 .yt:hover{
     transform:translateY(60px);
+    transition:all 5s ease-in  ; 
 }
 .xyt:hover{
 
  transform:translate(60px,60px);
+ transition:all 5s ease-out ; 
 }
 
 .trans{
@@ -50,15 +52,18 @@
 }
 .xs:hover{
     transform:scaleX(1.5);
+    transition:all 8s ease 2s;
 
 }
 .ys:hover{
     transform:scaleY(1.5);
+    transition:all 8s ease-in-out 2s;
+
     
 }
 .xys:hover{
     transform:scale(1.5,1.5);
-    
+    transition:all 8s linear 2s;
 }
 .skew{
     
@@ -70,12 +75,15 @@
 }
 .xk:hover{
     transform: skewX(30deg);
+    transition:all 5s linear ;
 }
 .yk:hover{
     transform: skewY(30deg);
+    transition:all 5s ease ;
 }
 .xyk:hover{
     transform: skew(30deg,30deg);
+    transition:all 5s ease-in ;
 }
 .rotate{
 
@@ -87,24 +95,30 @@
 }
 .xr:hover{
     transform: rotate(90deg);
+    transition:all 1s ease-in 1s ;
+
 }
 .yr:hover{
     transform: rotate(270deg);
+    transition:all 1s ease-out 1s ;
 }
 .xyr:hover{
     transform: rotate(180deg);
+    transition:all 1s ease 1s ;
 }
 .xyzr:hover{
     transform: rotate(60deg);
+    transition:all 1s ease-in-out 1s ;
 }
 .main{
-    background-image: url(https://getwallpapers.com/wallpaper/full/e/f/0/751753-hd-texture-backgrounds-1920x1080-download.jpg);
+    background-image: url(https://images.freeimages.com/images/large-previews/f5a/metal-texture-3-1199822.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1{
-    color:white;
+    color:yellow;
     font-size: 50px;
 
 }
@@ -115,6 +129,7 @@ h1{
 <body>
     <div class="main">
     <div class="trans">
+        <h1>TRANSITIONS COMBINED WITH TRANSFORM PROPERTIES</h1>
         <h1>TRANSFORM PROPERTIES</h1>
         <p class="xt">X-AXIS</p>
         <p class="yt">Y-AXIS</p>
