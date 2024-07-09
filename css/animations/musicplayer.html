@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .main{
+            position: relative;
+            height:100%;
+            width:100%;
+            background-color:black;
+        }
+        
+        .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8{
+            height:100px;
+            width:10px;
+             background-color: yellow; 
+            position:fixed;
+            bottom: 0px;
+            left:0px;
+           
+        }
+        @keyframes moveg1{
+            from{
+                height:20px;
+            }
+            to{
+                height:280px;
+            }
+        } 
+.g1{
+animation-name: moveg1;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+@keyframes moveg2{
+    0%{
+        height:300px;
+    }
+    50%{
+        height: 75px;
+    }
+    100%{
+        height:180px;
+    }
+}
+
+.g2{
+animation-name: moveg2;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+
+
+@keyframes moveg3{
+    0%{
+        height:100px;
+    }
+    50%{
+        height: 350px;
+    }
+    100%{
+        height:0px;
+    }
+}
+
+.g3{
+animation-name: moveg3;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+
+
+
+ @keyframes moveg4{
+    0%{
+        height:50px;
+    }
+    50%{
+        height: 300px;
+    }
+    100%{
+        height:60px;
+    }
+} 
+
+.g4{
+animation-name: moveg1;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+
+.g5{
+animation-name: moveg2;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+.g6{
+animation-name: moveg3;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite; 
+}
+
+@keyframes moveg7{
+    0%{
+        height:500px;
+    }
+    50%{
+        height: 100px;
+    }
+    100%{
+        height:60px;
+    }
+} 
+.g7{
+    animation-name: moveg7;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite;
+}
+.g8{
+    animation-name: moveg2;
+animation-duration: 0.5s;
+animation-timing-function:ease;
+animation-fill-mode: backwards;
+ animation-iteration-count: infinite;
+}
+.audio{
+    float: right;
+}
+        </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1 style="color: pink;">NAA SONGS</h1>
+<div class="g1"></div>
+<div class="g2" style="left:15px ;background-color:red "></div>
+ <div class="g3" style="left:30px; background-color: blue;"></div> 
+<div class="g4"style="left:45px;background-color:green"></div>
+<div class="g5"style="left:60px;background-color:orange"></div>
+<div class="g6"style="left:75px;background-color:skyblue"></div>
+<div class="g7"style="left:90px; background-color:red"></div>
+<div class="g8"style="left:105px;background-color:violet"></div>
+ <div class="audio">
+<h1>MR.Perfect</h1><br>
+    
+        <img src="https://c.saavncdn.com/358/Mr-Perfect-2011-500x500.jpg "height="100px" width="100px"><br>
+        <h1 style="color: pink;">Akaasham badalaina</h1>
+            <audio controls>
+                <source src="./Aggipulla Lanti-SenSongsMp3.Co.mp3">
+            </audio><br>
+        <button style="float:left"> <a href="./audio.html/song1.mp3" download>DOWNLOAD</a></button><br>
+
+        <h1 style="color:pink;">Aggipulla lanti</h1>
+        <audio controls >
+            <source src="./song1.mp3">
+        </audio><br>
+        <button style="float:left"> <a href="./song1.mp3" download>DOWNLOAD</a></button><br>
+
+    </div>
+
+
+    </div>
+
+</body>
+</html>
