@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+   body{
+    height:300vh;
+    position: relative;
+    
+   }
+.top{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    position:fixed;
+    top:0;
+    width: 100%;
+     z-index: 10; 
+     background-color: white;
+     
+}
+img{
+    height:350px;
+    width:250px;
+
+}
+
+.row1,.row2{
+    display: flex;
+    flex-direction: row;
+      align-items: center; 
+        justify-content:center;      
+    margin-top: 100px;
+   flex-wrap: wrap;
+   column-gap: 20px;
+    z-index:1;
+    /* border: 2px solid blue; */
+}
+.row2{
+    margin-top: 50px;
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{
+    display: flex;
+    flex-direction: column;
+  height: 700px;
+    /* border: 2px solid brown; */
+width:300px;
+}
+.item1a{
+    margin-top: 10px;
+    font-weight:400;
+    font-family: "Segoe UI", Arial, sans-serif;
+margin-left: 6px;
+}
+  .item1b{
+    margin-left: 6px;
+   
+    color: lightslategray;
+     font-size: 15px; 
+     font-family:  Verdana, Geneva, Tahoma, sans-serif; 
+}  
+h1{
+    font-weight: 400;
+}
+.numbers{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    
+   
+    
+}
+ .numbers a{
+    margin-left: 5px;
+   
+} 
+
+.numbers a:hover{
+  
+    background-color: black;
+    color: white;
+    width:20px;
+   
+}
+a{
+    text-decoration: none;
+}
+.one{
+     background-color: black; 
+    color: white;
+}
+.one:hover{
+background-color:lightslategray;
+}
+.man h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.manpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#m{
+    width: 700px;
+    height:400px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.about p{
+    margin-left: 50px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.b,.c{
+    display: flex;
+    row-gap: 2px;
+}
+ 
+/* }  */
+.bb{
+    display: flex;
+    flex-direction:row;
+    
+/* border: 2px solid blueviolet; */
+}
+.b3{
+    
+    display: flex;
+    background-color: grey;
+    row-gap: 10px;
+}
+.b1,.b2,.b3{
+    width: 33%;
+    /* border: 1px dotted black; */
+}
+
+/* .bottom{
+    /* border: 3px solid violet; */
+*/
+.b1{
+    flex-wrap: wrap;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+/* border: 2px solid brown; */
+}
+.para p {
+   margin: 0;
+    padding: 0; 
+    margin-bottom: 5px; 
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.b:hover{
+    background-color:lightgray;
+}
+
+.ptags{
+    display:flex;
+    flex-direction:column ;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+    margin-left: 10px;
+ 
+    
+}
+.data h3{
+    background-color: gray;
+    padding: 2px;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+    </style>
+<body>
+
+    <!-- top section -->
+    <div class="top">
+        
+        <span class="material-symbols-outlined">
+        menu
+            </span>
+    
+        <h1>My Food</h1>
+        <h1>Mail</h1>
+    </div>
+
+    <!-- ROW 1 -->
+
+
+    <div class="row1" id="lessthan">
+        <div class="item1">
+            <img src="./i1.jpg">
+             <div class="item1a"><h1 style="font-weight: 400;">The Perfect Sandwich,A<br>  Real NYC<br> Classic</h1></div>
+<div class="item1b"><p style="font-weight: 100;">Just some random text, lorem ipsum text praesent tincidunt ipsum<br> lipsum.</p></div> 
+            </div>
+<div class="item2">
+<div ><img src="./i2.jpg"></div>
+ <div class="item1a"><h1>Let Me Tell You About<br> This Steak</h1></div>
+
+<p class="item1b">Once again, some random text to  lorem lorem<br> ipsum text<br> praesent tincidunt ipsum lipsum.</p> 
+</div>
+
+
+    <div class="item3">
+        <img src="./i3.jpg">
+        <div class="item1a"><h1>Cherries,<br> interrupted</h1></div>
+        <div class="item1b"><p style="font-weight: 100;">Just some random text, lorem ipsum text praesent<br> tincidunt ipsum<br> lipsum.</p></div> 
+        </div>
+
+        <div class="item4">
+            <img src="./i4.jpg">
+            <div class="item1a"> <h1>Once Again, Robust Wine and<br> Vegetable<br> Pasta</h1></div>
+            </h1>
+            <div class="item1b"> <p style="font-weight: 100;">Lorem ipsum text praesent <br>tincidunt ipsum<br> lipsum</p></div>
+            </div>
+
+</div>
+<div class="row2">
+    <div class="item5">
+        <img src="./i5.jpg">
+        <div class="item1a"> <h1>All I Need Is a Popsicle</h1></div>
+        </h1>
+        <div class="item1b"> <p style="font-weight: 100;">Lorem ipsum text<br> praesent <br>tincidunt ipsum<br> lipsum</p></div>
+        </div>
+
+        <div class="item6">
+            <img src="./i6.jpg">
+            <div class="item1a"> <h1>Salmon For Your Skin</h1></div>
+            </h1>
+            <div class="item1b"> <p style="font-weight: 100;">Lorem ipsum text<br> praesent <br>tincidunt ipsum<br> lipsum</p></div>
+            </div>
+
+            <div class="item7">
+                <img src="./i7.jpg">
+                <div class="item1a"> <h1>The Perfect Sandwich, A Real Classic</h1></div>
+                </h1>
+                <div class="item1b"> <p style="font-weight: 100;">Lorem ipsum text<br> praesent <br>tincidunt ipsum<br> lipsum</p></div>
+                </div>
+
+                <div class="item8">
+                    <img src="./i8.jpg">
+                    <div class="item1a"><h1>Le French</h1></div>
+                    </h1>
+                    <div class="item1b"> <p style="font-weight: 100;">Lorem ipsum text<br> praesent <br>tincidunt ipsum<br> lipsum</p></div>
+                    </div>
+                </div> <br><br><br>            
+<div class="numbers">
+    <a href="#lessthan">&lt;&lt;</a>
+    <a class="one" href="#lessthan">1</a>
+    <a href="#lessthan">2</a>
+    <a href="#lessthan">3</a>
+    <a href="#lessthan">4</a>
+    <a href="#lessthan">&gt;&gt;</a>
+</div><br><br><br>
+<hr>
+<div class="man">
+<h3 >ABOUT ME THE FOOD MAN</h3>
+</div>
+<div class="manpic">
+    <img id="m" src="./man.jpg">
+</div>
+<div class="about">
+    <h3>Iam !who Iam!</h3>
+    <h4 style="color: black;">With Passion For Real, Good Food</h4>
+    <p style="color: black; font-style:oblique;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world<br> with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus<br> ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+</div>
+<div class="bottom">
+<div class="b1" style="width: 33%; height: 400px;">
+    <h1 style="margin-top: 10px; margin-bottom: 10px; margin-left: 10px;">Footer</h1>
+    <h3 style="margin-top: 10px; margin-bottom: 10px; margin-left: 10px; font-weight: 400;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo<br> condimentum, porta lectus vitae, ultricies congue<br> gravida diam non fringilla.</h3>
+<h4 style="margin-left: 10px; font-weight: 100;">powered by<a href="https://www.w3schools.com/" style="text-decoration: none;"> w3.css</a></h4>
+</div>
+<div class="b2" style="width: 33%; height: 400px;">
+<h1 style="margin-top: 10px;">Blog Post</h1>
+
+    <div class="b">
+        <div class="bb">
+        <img src="./b1.jpg" style="height: 70px;width:70px ;margin-left: 10px;">
+       <div class="para">
+
+        <p style="font-weight: 400;font-style: oblique;">Lorem <p>
+            <p style="font-weight: 300;">Sed mattics nunc </p>
+        </div>
+        </div>
+        </div>
+        <hr>
+        
+
+
+        <div class="b" style="margin-top: 10px;">
+            <div class="bb">
+            <img src="./b2.jpg" style="height: 70px;width:70px ;margin-left: 10px;">
+           <div class="para">
+    
+            <p style="font-weight: 400;font-style:oblique;"> Epsum<p>
+                <p style="font-weight: 100;">Sed mattics nunc </p>
+            </div>
+            </div>
+            </div>
+</div>
+<div class="b33" style="width: 33%; height: 400px;">
+    <div class="ptags">
+
+<h1 style="margin-top: 10px; margin-left:10px;">popular tags</h1>
+<div class="data">
+<h3 style="background-color: black;">Travel </h3>
+<h3>Newyork</h3>
+<h3>Dinner</h3>
+<h3>Salmon</h3>
+<h3>France</h3>
+<h3>DRINKS</h3>
+<h3>Ideas</h3>
+<h3>Flavours</h3>
+<h3>Cuisine</h3>
+<h3>Chicken</h3>
+<h3>Dressing</h3>
+<h3>Fried</h3>
+<h3>Fish</h3>
+<h3>Duck</P>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
