@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            height: 100vh;
+            align-content: center;
+            justify-content: center;
+        }
+        .container div {
+            border: 2px solid black;
+        }
+        .item1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .item2 {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            position: relative;
+        }
+        .item2 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item3 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .item4 {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .item5 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+        .item6 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <img src="./i1.jpeg">
+        </div>
+        <div class="item2">
+            <img src="./i2.png" alt="Item 2 Image">
+        </div>
+        <div class="item3">
+            <img src="./i3.png">
+        </div>
+        <div class="item4">
+            <img src="./i4.jpg">
+        </div>
+        <div class="item5">
+            <img src="./i5.jpeg">
+        </div>
+        <div class="item6">
+            <img src="./i6.jpg">
+        </div>
+    </div>
+</body>
+</html>

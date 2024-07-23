@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background: linear-gradient(red,yellow);
+        }
+        label{
+            color: white;
+            background-color:blue
+        }
+        input[type="email"]{
+            color: brown;
+        }
+        label[for="mob"]{
+            color:yellow;
+        }
+        input[id=name]{
+            color:pink;
+        }
+        input[id*=d]{
+            color:darkgreen;
+        }
+        </style>
+</head>
+<body>
+    <center>
+    <h1  style="color: brown;">OSMANIA UNIVERSITY</h1>
+    <h2 style="color: brown;">Student registration form</h2>
+    </center>
+
+    <form >
+        
+        <center>
+        
+            <fieldset>
+    <label for="name">Name</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="dob">DOB</label>
+    <input type="date" id="dob"><br><br>
+
+    <label for="gender">Gender</label>
+    <input type="checkbox" id="gender">male
+    <input type="checkbox" id="gender">Female<br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="Email"><br><br>
+
+    <label for="address">Address</label>
+    <textarea id="address" rows="5" cols="20"></textarea><br><br>
+    
+    <label for="percentage">Percentage:</label>
+    <input list="percentage" >
+    <datalist id="percentage">
+        <option value="above 90%">
+        <option value="above 80%">
+        <option value="above 70%">
+        <option value="above 60%">
+        <option value="below 60%">
+        
+        </datalist><br><br>
+        
+
+    <label for="school">intermediate group</label>
+    <input list="school" >
+    <datalist id="school">
+     <option value="MPC">
+        <option value="MEC">
+        <option value="CEC">
+        <option value="BIPC">
+    
+        </datalist>
+        
+
+
+    <label for="course">course</label>
+    <input list="course" >
+    <datalist id="course">
+     <option value="BSC">
+        <option value="BCOM">
+        <option value="BIO TECH">
+            
+        </datalist><br><br>
+    
+
+<label for="mob">Mobile Number</label>
+<input type="tel" id="mob"></input><br><br>
+
+
+<label for="all"></label>
+<button type="reset" id="all" style="float:left">reset</button>
+<button type="submit" style="float: right;">submit</button>
+
+    
+    </center>
+
+            </fieldset>
+    </form>
+
+
+
+</body>
+</html>
