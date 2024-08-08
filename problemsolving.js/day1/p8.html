@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var temp=prompt("enter a temperature");
+var unit=prompt("enter a unit");90
+if(unit== "C" || unit=="c"){
+    temp=(temp*1.8)+32;
+    console.log("The temperature in fahrenheit is",temp); 
+}
+else if(unit== "F" || unit =="f"){
+    temp=(temp-32)*0.55;
+    console.log("The temperature in celcius is",temp); 
+}else{
+    console.log("enter valid unit");
+}
+
+        </script>
+</body>
+</html>

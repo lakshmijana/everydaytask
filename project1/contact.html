@@ -19,7 +19,9 @@
 
             display: flex; 
                justify-content: space-between;   
-               align-items: center;  
+               align-items: center; 
+               position: relative; 
+               z-index: 2;
         } 
         .left{
         display: flex;
@@ -50,6 +52,8 @@
      align-items: center;
    flex-wrap: wrap;
  margin-right: 10px;
+ position: relative;
+ z-index: 3;
 }
 .right a{
     font-weight: 100;
@@ -98,6 +102,22 @@ body{
   animation-fill-mode: forwards;
      animation-delay: 3s;   
 }
+.overlay {
+            position:fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+           
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%); 
+          
+            padding: 0%;
+            margin: 0 !important;
+            z-index: 1;
+        }
+
 .input1 {
             border: none;
             border-bottom: 3px solid aquamarine;
@@ -109,10 +129,52 @@ body{
         .input1::placeholder {
             color:white; /* Set the placeholder text color */
         }
+
+       
+a:active{
+    color:aquamarine;
+}
+
+@media screen and (max-width: 768px) {
+    .item1 {
+        margin: 10%;
+    }
+    .left1{
+flex-direction: column;
+    }
+
+    .right{
+       
+        
+       justify-content: space-evenly;
+      /* gap:10%;  */
+      margin-left: 0;
+    }
+    .top{
+        flex-direction: column;
+    }
+    #last{
+        margin-left: 0% !important;
+    }
+} 
+
+@media screen and (max-width:526px){
+    .right{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .top{
+        flex-direction: column;
+    }
+    #last{
+        margin-left: 0% !important;
+    }
+}
         </style>
     
 <body>
-
+<div class="overlay"></div>
 <div class="main">
     <!-- THIS REPRESENTS HEADER SECTION -->
  <div class="top">
@@ -134,8 +196,8 @@ body{
     </div>
 
  <div class="right">
-<a href="./index.html" >HOME</a>
-<a href="./about.html" >ABOUT</a>
+<a href="./index3.html" >HOME</a>
+<a href="./about2.html" >ABOUT</a>
 <a href="./services.html" target="hi">SERVICES</a>
 <a href="./contact.html">CONTACT</a>
 

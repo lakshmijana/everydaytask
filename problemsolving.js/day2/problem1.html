@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         .calculate the discount based on the purchase amount.
+
+// If the amount is greater than 500, apply a 20% discount.
+// If the amount is between 300 and 500, apply a 15% discount.
+// If the amount is between 100 and 299, apply a 10% discount.
+// If the amount is less than 100, apply a 5% discount//
+var price=1000;
+var discount;
+if(price>500){
+    discount=0.2*price;
+     var totalbill=price-discount;
+    console.log("your total bill is"+ totalbill);
+}
+else if(price>=300&&price<=500){
+    discount=0.15*price;
+    var totalbill=price-discount;
+    console.log("your total bill is"+ totalbill);
+}
+else if(price>100&&price<=299){
+    discount=0.1*price;
+    var totalbill=price-discount;
+    console.log("your total bill is"+ totalbill);
+}else if(price<100){
+
+    discount=0.05*price;
+    var totalbill=price-discount;
+    console.log("your total bill is"+ totalbill);
+}
+
+
+        </script>
+</body>
+</html>
