@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // finding duplicate values and prinnting their count
+        let arr = [[1, 2, 3, 1], [4, 5, 6,5], [7, 8, 9]];
+count=0;
+let dup = [];
+for (let i of arr) {
+    let emp = [];
+
+    for (let j = 0; j < i.length; j++) {
+        
+        if (!emp.includes(i[j])) {
+            emp.push(i[j]);
+        } else if (!dup.includes(i[j])) {
+            dup.push(i[j]);
+            count++
+        }
+    }
+}
+
+console.log(dup);
+
+console.log(count)
+        </script>
+</body>
+</html>
