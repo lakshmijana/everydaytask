@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implementing tri end
+        var str="    helloworld    "
+res=""
+ var nonspaceindex;
+for (i = str.length - 1; i >= 0; i--) {
+    if (str[i] != " ") {
+       nonspaceindex=i
+        break;
+       
+    }
+}
+
+for(j=0;j<=nonspaceindex;j++){
+    res=res+str[j]
+}
+console.log(res)
+console.log(res.length)
+        </script>
+</body>
+</html>

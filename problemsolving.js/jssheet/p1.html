@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+        //problem 1
+        // Create a function that takes two numbers as arguments and returns their sum.
+
         function sum(a,b){
             
             return a+b;
@@ -15,27 +18,34 @@
         console.log(sum(10,20));
 
         //problem2
-// function convert(a){
-//     return a*60
-// }
-// console.log(convert(2));
+        // Write a function that takes an integer minutes and converts it to seconds.
+
+function convert(a){
+    return a*60
+}
+console.log(convert(2));
+
 //problem 3
-// function num(a){
-//     return ++a;
-// }
-// console.log(num(3));
-//problem 4
-// var a;
-// function age(a){
+// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+function num(a){
+    return ++a;
+}
+console.log(num(3));
+// problem 4
+var a;
+function age(a){
     
-//   a=a*365;
-//   return a
+  a=a*365;
+  return a
   
   
-// }
-//  console.log(age(2));
+}
+ console.log(age(2));
 
 //problem5
+// Create a function that takes the age in years and returns the age in days.
+
 function current(v,i){
     var power;
     power=v*i;
@@ -60,6 +70,328 @@ function hi(a,b){
     }
 }
 console.log(hi(8,2));
+
+//problem 8
+// Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+
+console.log("Try programiz.pro");
+function str(s1,s2){
+    if(s1.length==s2.length){
+        console.log("true")
+    }else{
+        console.log("false")
+    }
+    
+}
+str("hello","hell");
+
+//problem9
+// Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+
+var name=(a)=>{
+    console.log("welcome",a)
+}
+name("Lakshmi");
+
+
+//problem 12
+// Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+// Example:
+// findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2]
+var arr=[];
+
+function largest( a, b, c){
+    var large1=a[0];
+var large2=b[0];
+var large3=c[0];
+    for(i=1;i<a.length;i++){
+        if(a[i]>large1){
+           large1=a[i]
+        } 
+    }
+    arr.push(large1)  
+   
+    for(j=1;j<b.length;j++){
+        if(b[j]>large2){
+           large2=a[j]
+        } 
+    }
+    arr.push(large2)  
+   
+     for(k=1;k<c.length;k++){
+        if(c[k]>large3){
+           large3=a[j]
+        } 
+    }
+    arr.push(large3) 
+
+    console.log(arr)
+ 
+}   
+largest([10,20,30],[100,89,0],[21,3,8]);
+
+//problem13
+// Create a function that takes an array of numbers and returns the second largest number.
+// Example:
+// secondLargest([10, 40, 30, 20, 50]) ➞ 40
+
+var large1=0
+function largest( a, b, c){
+    var large1=a[0];
+
+    for(i=1;i<a.length;i++){
+        if(a[i]>large1){
+           large1=a[i]
+        } 
+    }
+    a.pop(large1)
+   
+    large2=a[0]
+    for(i=1;i<a.length;i++){
+        if(a[i]>large2)
+        large2=a[i]
+    }
+ console.log(large2)
+}
+
+
+largest([10,20,30]);
+
+//problem14
+function  a(arr) {
+
+for( i = 0; i < arr.length; i++) {
+  for ( j = i + 1; j < arr.length;j++) {
+    if (arr[i] === arr[j]) {
+      arr.splice(j, 1);
+     }
+    
+  }
+  
+}
+console.log(arr);
+}
+
+a([1, 2, 3, 1, 2, 4,2, 5]);
+
+//problem 16
+// Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+// Example:
+
+// charCount("c", "Chamber of secrets") ➞ 1
+
+function charcount(a,b){
+    count=0
+    for(i=0;i<b.length;i++){
+        if(a[0]==b[i])
+        count++
+    }
+   
+
+console.log(count);
+}
+charcount("l","hello world");
+
+//problem 17
+// Create a function that takes a string and returns the number (count) of vowels contained within it.
+// Example:
+
+// countVowels("Celebration") ➞ 5
+
+
+function vowelcount(a){
+     let count=0
+    for( let i=0;i<a.length;i++){
+    if(a[i]=="a"||a[i]=="e"||a[i]=="o"||a[i]=="u"||a[i]=="i")
+    
+        count++
+        
+    
+}
+console.log(count)
+    
+}
+
+vowelcount("helloooo");
+//problem 18
+// Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+// Example:
+// reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
+
+
+function changecase(a) {
+    let res = ""; 
+    for (let i = 0; i < a.length; i++) { 
+        if (a[i] == a[i].toUpperCase()) {
+            res += a[i].toLowerCase(); 
+        } else if (a[i] == a[i].toLowerCase()) { 
+            res += a[i].toUpperCase();
+        }
+    }
+    console.log(res);
+}
+
+changecase("Hello world"); 
+//problem 19
+// Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.
+			
+// 			Input:      n=5
+// 			Output:   2 4 6 8 10
+
+var n=5;
+var a
+var res;
+function pass(a){
+    for(a=1;a<=n;a++){
+        res=a*2
+        console.log(res)
+    }
+    
+}
+
+pass(1);
+
+//problem 20
+// Create Function that will take one parameter and return type of the data.
+			
+// 			Input:       500
+// 			Output:     Integer
+
+// 			Input:       Coding
+// 			Output:    String
+
+
+function type(a){
+         return typeof(a)
+     }
+    console.log(type("lakshmi"));
+
+//problem 21
+// 21. Program to find greatest of three numbers(using ternery operator).
+
+// Input:  4 8 2
+// Output: 8 is gretest
+
+
+function largest(n1,n2,n3){
+    return n1>n2 &&n1>n3?n1:n2>n3?n2:n3
+}
+ var result=largest(10,20,30);
+console.log(result,"is largest number");
+
+
+//problem 22
+// 22 . C Program to find factorial of number.
+		
+//         Input: n=5
+//         Output: 120
+
+//         Explanation: 5 x 4 x 3 x 2 x 1 = 120
+
+let n=6;
+var fact=1
+for(i=1;i<=n;i++){
+    fact=fact*i
+}
+console.log(fact)
+//program 24
+// 24. Print Patter using loop.
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+
+var n = 5;
+for (var i = 1; i <= n; i++) {
+    var line = '';
+    for (var j = 1; j <= i; j++) {
+        line += j ;
+    }
+    console.log(line);
+}
+
+
+//program 25
+// 25. C Program to Calculate the Power of a Number(using loop only).
+
+// 			Input: n=5, p=3
+// 			Output: 5 ^ 3 = 125
+// 			Explanation: 5 x 5 x 5 = 125
+
+var n1=5;
+var n2=3;
+res=1;
+for(i=1;i<=n2;i++){
+    res*=n1;
+  
+}
+console.log(res)
+//program 26
+// 26. Program to Check Whether a Number is Prime or Not
+
+// Input: 9
+// Output: 9 is not a prime no
+
+// Input: 7
+// Output : 7 is a prime no
+
+
+var n1=11;
+if(n1%2==0){
+    console.log("even")
+}
+else{
+    console.log("prime")
+}
+
+
+//problem 30
+
+// . Program to count vowels and consonants in a given String.
+
+// 			Input: i am ram
+// 			Output: 3 vowels 3 consonants
+var str=" my name is lakshmi";
+var vcount=0;
+var ccount=0;
+for(i=0;i<str.length;i++){
+    if
+        (str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u")
+     vcount++
+    
+     else if
+        (str[i]!="a" && str[i]
+        !="e"&&str[i]!="i"&&str[i]!="o"&&str[i]!="u")
+    ccount++
+
+
+}
+console.log(" the no of vowels are",vcount)
+console.log(" the no of consonants are",ccount)
+
+//problem 33
+// 33. Count occurrence of number:
+
+// 			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+// 			Output: 7 present 2 times.
+
+
+var count=0;
+var arr=[1,2,3,4,7,5,6,7,8,9,7,8,9,7,];
+for(i=0;i<arr.length;i++){
+   find="7"
+    if(arr[i]==find)
+         
+        count++
+         
+    
+  
+}
+   console.log(find,"present", count, "times");
+
 
         </script>
 </body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swap</title>
+</head>
+
+<body>
+    <div class="small">
+        <img onmouseover="hello()" onmousedown="initial()" class="i1" src="https://tse2.mm.bing.net/th?id=OIP.d5sGXrCChF0uvxp9cgXpxAHaHl&pid=Api&P=0&h=180" alt="Image 1"><br>
+        <img onmouseover="hi()" onmousedown="initial()" class="i2" src="https://i.etsystatic.com/21211793/r/il/2d664f/2065078677/il_fullxfull.2065078677_8zox.jpg" alt="Image 2"><br>
+        <img onmouseover="f3()" onmousedown="initial()" class="i3" src="http://1.bp.blogspot.com/-ds9qPv27V_g/T3FuWRf00jI/AAAAAAAABZk/IFd2FYyAFJE/s1600/Christmas+Teddy+Bear+Wallpapers+1.jpg" alt="Image 3">
+    </div>
+
+    <div class="big">
+        <img class="b1" src="https://tse2.mm.bing.net/th?id=OIP.d5sGXrCChF0uvxp9cgXpxAHaHl&pid=Api&P=0&h=180" alt="Big Image">
+    </div>
+
+    <script>
+        function hello() {
+            var b1get = document.getElementsByClassName("b1");
+            if (b1get.length > 0) {
+                b1get[0].src = "https://tse2.mm.bing.net/th?id=OIP.d5sGXrCChF0uvxp9cgXpxAHaHl&pid=Api&P=0&h=180";
+            }
+        }
+
+        function hi() {
+            var b1get = document.getElementsByClassName("b1");
+            if (b1get.length > 0) {
+                b1get[0].src = "https://i.etsystatic.com/21211793/r/il/2d664f/2065078677/il_fullxfull.2065078677_8zox.jpg";
+            }
+        }
+
+        function f3() {
+            var b1get = document.getElementsByClassName("b1");
+            if (b1get.length > 0) {
+                b1get[0].src = "http://1.bp.blogspot.com/-ds9qPv27V_g/T3FuWRf00jI/AAAAAAAABZk/IFd2FYyAFJE/s1600/Christmas+Teddy+Bear+Wallpapers+1.jpg";
+            }
+        }
+
+        function initial() {
+            var b1get = document.getElementsByClassName("b1");
+            if (b1get.length > 0) {
+                b1get[0].src = "https://tse2.mm.bing.net/th?id=OIP.d5sGXrCChF0uvxp9cgXpxAHaHl&pid=Api&P=0&h=180"; // Initial image URL
+            }
+        }
+    </script>
+</body>
+</html>

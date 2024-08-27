@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var str="hello";
+  if(str.length%2==0){
+    
+  
+    var mid = str.length / 2;
+    var mid1 = str[mid - 1]; 
+    var mid2 = str[mid];     
+    console.log(mid1, mid2); 
+if(str[mid1&&mid2]=="a"||str[mid&&mid2]=="e"||str[mid&&mid2]=="i"||str[mid1&&mid2]=="o"||str[mid1&&mid2]=="u")
+{
+    console.log(true)
+} else {
+            console.log(false)
+        }
+       
+    }
+
+  else{
+      mid=Math.floor(str.length/2)
+      if(str[mid=="a"]||str[mid]=="e"||str[mid]=="i"||str[mid]=="o"||str[mid]=="u")
+          console.log(true)
+      else
+          console.log(false)
+  }  
+
+  //problem 2
+  //using for in
+  var str="something";
+res=""
+
+    
+    for(j in str){
+      if(str[j]=="a"||str[j]=="e"||str[j]=="o"||str[j]=="i"||str[j]=="u")
+      {
+          acode=str.charCodeAt(j)
+          
+         nchar=String.fromCharCode(acode+1)
+        
+         res+=nchar
+      }else{
+          res=res+str[j]
+      }
+      
+    
+    }
+   
+ console.log(res) 
+
+
+ //using for loop
+ var str="something";
+var res=""
+ 
+var str="something"
+for(i=0;i<str.length;i++){
+    if(str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u"){
+        acode=str.charCodeAt(i);
+        nchar=String.fromCharCode(acode+1)
+        res+=nchar
+    }
+    else{
+        res=res+str[i]
+    }
+}
+console.log(res)
+  </script>
+  
+</body>
+</html>

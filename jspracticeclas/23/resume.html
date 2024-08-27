@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+
+const name=document.createElement("h1");
+name.innerText=" J.Venkata lakshmi";
+document.body.append(name);
+const fieldset = document.createElement("fieldset");
+const legend = document.createElement("legend");
+    legend.innerText = "CAREER OBJECTIVE";
+    fieldset.append(legend);
+const careerobj=document.createElement("p");
+careerobj.innerText="Motivated and enthusiastic Frontend Developer with a solid understanding of HTML, CSS, and JavaScript. Seeking an entry-level position to apply my skills in creating intuitive, responsive, and visually appealing web interfaces while contributing to the growth and success of a dynamic development team";
+fieldset.append(careerobj);
+
+document.body.append(fieldset);
+const hob=document.createElement("h2");
+hob.innerText="Hobbies";
+ var hobbies=document.createElement("ul");
+ var l1=document.createElement("li");
+ l1.innerText="listening to music";
+ var l2=document.createElement("li");
+ l2.innerText="reading books";
+ hobbies.append(l1,l2);
+ document.body.append(hob,hobbies);
+
+ const skill=document.createElement("h2");
+skill.innerText="Skills ";
+ var sk=document.createElement("ul");
+ var l1=document.createElement("li");
+ l1.innerText="HTML";
+ var l2=document.createElement("li");
+ l2.innerText="CSS";
+ var l3=document.createElement("li");
+ l3.innerText="JAVA SCRIPT";
+
+ sk.append(l1,l2,l3);
+ document.body.append(skill,sk);
+
+
+ const dec=document.createElement("h2");
+dec.innerText="Declaration";
+const decinfo=document.createElement("p");
+decinfo.innerText="I hereby declare that the above information is true to the best of my knowledge and beliefhyderabad";
+
+document.body.append(dec,decinfo);
+
+
+ 
+
+
+        </script>
+</body>
+</html>
