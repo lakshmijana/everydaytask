@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotate Example</title>
+    <style>
+        img {
+            width: 100px;
+            transition: transform 0.5s ease; 
+        }
+    </style>
+</head>
+<body>
+   
+        <img class="i1" src="https://tse2.mm.bing.net/th?id=OIP.d5sGXrCChF0uvxp9cgXpxAHaHl&pid=Api&P=0&h=180" alt="Image 1"><br>
+    
+
+   
+    <button class="b1" onclick="rotateImage1()">90deg</button>
+    <button class="b2" onclick="rotateImage2()">270deg</button>
+    <button class="b2" onclick="rotateImage3()">180deg</button>
+    <button class="b2" onclick="rotateImage4()">360deg</button>
+
+
+    <script>
+
+
+        // Function to rotate the image by 90 degrees
+        function rotateImage1() {
+
+            const image = document.getElementsByClassName('i1')[0];
+            rotationAngle = 90; 
+            image.style.transform = `rotate(${rotationAngle}deg)`; 
+        }
+        function rotateImage2() {
+
+            const image = document.getElementsByClassName('i1')[0];
+            rotationAngle = 270; 
+            image.style.transform = `rotate(${rotationAngle}deg)`; 
+        }
+        function rotateImage3() {
+            // Access the image using getElementsByClassName (returns a collection, so we need the first element)
+            const image = document.getElementsByClassName('i1')[0];
+            rotationAngle = 180; // Increase the rotation angle by 90 degrees
+            image.style.transform = `rotate(${rotationAngle}deg)`; // Apply the rotation
+        }
+        function rotateImage4() {
+           
+            const image = document.getElementsByClassName('i1')[0];
+            rotationAngle = 360; 
+            image.style.transform = `rotate(${rotationAngle}deg)`; 
+        }
+    </script>
+</body>
+</html>
