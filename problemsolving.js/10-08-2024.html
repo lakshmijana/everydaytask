@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = 12;
+let num2 = 18;
+
+let count1 = 0;
+for (let i = 2; i < num1; i++) {
+    if (num1 % i === 0) {
+        count1++;
+    }
+}
+
+let count2 = 0;
+for (let i =2 ; i < num2; i++) {
+    if (num2 % i === 0) {
+        count2++;
+    }
+}
+
+if (count1 === count2) {
+    console.log("True");
+} else {
+    console.log("False");
+}
+        </script>
+    
+</body>
+</html>
