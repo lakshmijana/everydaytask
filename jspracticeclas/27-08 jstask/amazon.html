@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main img{
+        display: block;
+    }
+    .one ,img{
+        display: flex;
+        height:100%
+    }
+    </style>
+<body>
+    <div class="one">
+    <div class="main">
+    <img style="height:100px" id="i1"src="https://tse2.mm.bing.net/th?id=OIP.i82IFPLOWq6ZoFav0_fT7AHaJ4&pid=Api&P=0&h=180">
+    <img  style="height:100px"id="i2"src="https://oldnavy.gapcanada.ca/webcontent/0052/707/702/cn52707702.jpg">
+    <img style="height:100px" id="i3"src="https://oldnavy.gap.com/webcontent/0053/227/074/cn53227074.jpg">
+    </div>
+    <div class="bigimage"></div>
+</div>
+
+    <script>
+        var a =document.getElementById("i1");
+        a.addEventListener("click",function(){
+            var img=document.createElement("img");
+        img.setAttribute("src","https://tse2.mm.bing.net/th?id=OIP.i82IFPLOWq6ZoFav0_fT7AHaJ4&pid=Api&P=0&h=180");
+        var div=document.querySelector(".bigimage");
+        img.style.height="500px"
+        div.innerHTML = "";
+        div.appendChild(img);
+        div.style.border="1px solid black";
+        });
+
+
+        var b =document.getElementById("i2");
+        b.addEventListener("click",function(){
+            
+            var img=document.createElement("img");
+        img.setAttribute("src","https://oldnavy.gapcanada.ca/webcontent/0052/707/702/cn52707702.jpg");
+       img.style.height="500px"
+        var div=document.querySelector(".bigimage");
+        div.innerHTML = "";
+        div.appendChild(img);
+       
+        });
+
+
+        var c=document.getElementById("i3");
+        c.addEventListener("click",function(){
+            
+            var img=document.createElement("img");
+        img.setAttribute("src","https://oldnavy.gap.com/webcontent/0053/227/074/cn53227074.jpg");
+       img.style.height="500px"
+        var div=document.querySelector(".bigimage");
+        div.innerHTML = "";
+        div.appendChild(img);
+       
+        });
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="https://tse4.mm.bing.net/th?id=OIP.CPK1ANm7nhe0n8ZVgQgFlQHaHG&pid=Api&P=0&h=180" >   
+</body>
+<script>
+    var i1=document.getElementsByTagName("img");
+    
+    var b1=document.createElement("button");
+    b1.innerText="90deg";
+    b1.addEventListener("click",function(){
+        rotationAngle=90;
+        i1[0].style.transform = `rotate(${rotationAngle}deg)`; 
+
+    })
+
+    var b2=document.createElement("button");
+    b2.innerText="180deg";
+    b2.addEventListener("click",function(){
+        rotationAngle=180;
+        i1[0].style.transform = `rotate(${rotationAngle}deg)`; 
+    })
+
+    var b3=document.createElement("button");
+    b3.innerText="270deg";
+    b3.addEventListener("click",function(){
+        rotationAngle=270;
+        i1[0].style.transform = `rotate(${rotationAngle}deg)`; 
+    })
+
+    var b4=document.createElement("button");
+    b4.innerText="360deg";
+    b4.addEventListener("click",function(){
+        rotationAngle=360;
+        i1[0].style.transform = `rotate(${rotationAngle}deg)`; 
+    })
+
+
+    document.body.append(b1,b2,b3,b4)
+    
+    </script>
+</html>
