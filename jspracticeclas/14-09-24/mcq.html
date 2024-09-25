@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, and JS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>HTML, CSS, and JavaScript Quiz</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. What does HTML stand for?</h3>
+                <input type="radio" name="q1" value="a"> A) Hyper Text Markup Language<br>
+                <input type="radio" name="q1" value="b"> B) Home Tool Markup Language<br>
+                <input type="radio" name="q1" value="c"> C) Hyperlinks and Text Markup Language<br>
+                <input type="radio" name="q1" value="d"> D) Hyper Transfer Markup Language<br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Which HTML tag is used to define an internal style sheet?</h3>
+                <input type="radio" name="q2" value="a"> A) &lt;style&gt;<br>
+                <input type="radio" name="q2" value="b"> B) &lt;css&gt;<br>
+                <input type="radio" name="q2" value="c"> C) &lt;script&gt;<br>
+                <input type="radio" name="q2" value="d"> D) &lt;link&gt;<br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. What does CSS stand for?</h3>
+                <input type="radio" name="q3" value="a"> A) Computer Style Sheets<br>
+                <input type="radio" name="q3" value="b"> B) Creative Style Sheets<br>
+                <input type="radio" name="q3" value="c"> C) Cascading Style Sheets<br>
+                <input type="radio" name="q3" value="d"> D) Colorful Style Sheets<br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. Which property is used to change the background color in CSS?</h3>
+                <input type="radio" name="q4" value="a"> A) bgcolor<br>
+                <input type="radio" name="q4" value="b"> B) color<br>
+                <input type="radio" name="q4" value="c"> C) background-color<br>
+                <input type="radio" name="q4" value="d"> D) background<br>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. How do you make text bold in CSS?</h3>
+                <input type="radio" name="q5" value="a"> A) font-weight: bold;<br>
+                <input type="radio" name="q5" value="b"> B) text-weight: bold;<br>
+                <input type="radio" name="q5" value="c"> C) text-style: bold;<br>
+                <input type="radio" name="q5" value="d"> D) font-style: bold;<br>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. Which HTML tag is used to define a JavaScript script?</h3>
+                <input type="radio" name="q6" value="a"> A) &lt;javascript&gt;<br>
+                <input type="radio" name="q6" value="b"> B) &lt;script&gt;<br>
+                <input type="radio" name="q6" value="c"> C) &lt;js&gt;<br>
+                <input type="radio" name="q6" value="d"> D) &lt;code&gt;<br>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. How do you write "Hello World" in an alert box in JavaScript?</h3>
+                <input type="radio" name="q7" value="a"> A) alertBox("Hello World");<br>
+                <input type="radio" name="q7" value="b"> B) msg("Hello World");<br>
+                <input type="radio" name="q7" value="c"> C) alert("Hello World");<br>
+                <input type="radio" name="q7" value="d"> D) msgBox("Hello World");<br>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. How do you add a comment in JavaScript?</h3>
+                <input type="radio" name="q8" value="a"> A) <!-- This is a comment --><br>
+                <input type="radio" name="q8" value="b"> B) // This is a comment<br>
+                <input type="radio" name="q8" value="c"> C) /* This is a comment */<br>
+                <input type="radio" name="q8" value="d"> D) &lt;!-- This is a comment --&gt;<br>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. How can you detect the client’s browser name in JavaScript?</h3>
+                <input type="radio" name="q9" value="a"> A) navigator.appName<br>
+                <input type="radio" name="q9" value="b"> B) client.navName<br>
+                <input type="radio" name="q9" value="c"> C) browser.name<br>
+                <input type="radio" name="q9" value="d"> D) window.browser<br>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. Which event occurs when the user clicks on an HTML element?</h3>
+                <input type="radio" name="q10" value="a"> A) onmouseclick<br>
+                <input type="radio" name="q10" value="b"> B) onchange<br>
+                <input type="radio" name="q10" value="c"> C) onclick<br>
+                <input type="radio" name="q10" value="d"> D) onmouseover<br>
+            </div>
+
+        
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+
+      
+        <div id="result"></div>
+    </div>
+
+    
+
+
+ 
+
+    <script>
+        
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+    
+    let correctAnswers = {
+        q1: 'c',
+        q2: 'c',
+        q3: 'c',
+        q4: 'c',
+        q5: 'a',
+        q6: 'b',
+        q7: 'c',
+        q8: 'b',
+        q9: 'a',
+        q10: 'c'
+    };
+
+   
+    let score = 0;
+
+    for (let i = 1; i <= 3; i++) {
+        let userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+        
+        if (userAnswer && userAnswer.value === correctAnswers[`q${i}`]) {
+            score++;
+        }
+    }
+
+ 
+    let resultDiv = document.getElementById( "result");
+    
+    resultDiv.innerHTML = `Your score is ${score}`;
+});
+
+        </script>
+</body>
+</html>

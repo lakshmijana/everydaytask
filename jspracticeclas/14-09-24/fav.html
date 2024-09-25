@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background-color: palevioletred;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Personal Questions</h2>
+    <form id="personalQuestionsForm">
+        <label for="q1">1. What is your favorite hobby?</label>
+        <input type="text" id="q1" name="q1" required>
+
+        <label for="q2">2. What is your dream job?</label>
+        <input type="text" id="q2" name="q2" required>
+
+        <label for="q3">3. What is your favorite book?</label>
+        <input type="text" id="q3" name="q3" required>
+
+        <label for="q4">4. Where would you like to travel?</label>
+        <input type="text" id="q4" name="q4" required>
+
+        <label for="q5">5. What is your favorite food?</label>
+        <input type="text" id="q5" name="q5" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Get the form element
+        const form = document.getElementById('personalQuestionsForm');
+
+        // Handle form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get values from the form inputs
+            const hobby = document.getElementById('q1').value;
+            const dreamJob = document.getElementById('q2').value;
+            const favoriteBook = document.getElementById('q3').value;
+            const travelDestination = document.getElementById('q4').value;
+            const favoriteFood = document.getElementById('q5').value;
+
+            // Create an object to store the data
+            const favinfo = {
+                hobby,
+                dreamJob,
+                favoriteBook,
+                travelDestination,
+                favoriteFood
+            };
+
+            // Store the data in local storage
+            localStorage.setItem('personalInfo', JSON.stringify(favinfo));
+
+         
+            alert('Your answers have been saved!');
+ 
+        });
+        console.log(favinfo)
+    </script>
+</body>
+</html>

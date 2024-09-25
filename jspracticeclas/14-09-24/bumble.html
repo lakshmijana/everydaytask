@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        /* size: 100vh; */
+        position:fixed;
+        z-index: -1;
+      
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .buttons button {
+            background-color: palevioletred; /* Light blue background */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            color:black;
+        }
+        .buttons button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly larger on hover */
+        }
+
+        .buttons button:active {
+            background-color: #1c5980; /* Even darker on click */
+            transform: scale(0.98); /* Slight shrink on click */
+        }
+
+
+    </style>
+<body>
+    <img src="https://thumbs.dreamstime.com/z/male-female-cartoon-characters-chatting-texting-their-smartphones-young-romantic-couple-sending-messages-to-male-118682505.jpg">
+    <div class="buttons">
+    <a href="./personal.html"> 
+    <button>Personal</button>
+    <a href="./business.html">
+    <button>Business</button>
+    <a href="./fav.html">
+    <button>Favourites</button></a>
+    <div>
+</body>
+</html>
