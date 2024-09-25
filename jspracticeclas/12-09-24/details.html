@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <div id="product-details"></div>
+
+    <script>
+        
+        const product = JSON.parse(localStorage.getItem('selectedProduct'));
+
+        if (product) {
+           
+            const detailsDiv = document.getElementById('product-details');
+            const title = document.createElement('h2');
+            title.innerText = product.title;
+
+            const description = document.createElement('p');
+            description.innerText = `Description: ${product.description}`;
+
+            const price = document.createElement('p');
+            price.innerText = `Price: $${product.price}`;
+
+            const category = document.createElement('p');
+            category.innerText = `Category: ${product.category}`;
+
+            const rating = document.createElement('p');
+            rating.innerText = `Rating: ${product.rating.rate} (Count: ${product.rating.count})`;
+
+            const img = document.createElement('img');
+            img.src = product.image;
+            img.width = 300;
+
+            detailsDiv.appendChild(title);
+            detailsDiv.appendChild(description);
+            detailsDiv.appendChild(price);
+            detailsDiv.appendChild(category);
+            detailsDiv.appendChild(rating);
+            detailsDiv.appendChild(img);
+        } else {
+            document.getElementById('product-details').innerText = "No product data found.";
+        }
+    </script>
+</body>
+</html>
