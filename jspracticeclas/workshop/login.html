@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .card form{
+        
+        background-color:aliceblue;
+        width:500px;
+        text-align: center;
+       margin-left: 40%;
+    }
+#btn{
+    background-color:green ;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+    <form>
+        <label for="user">Username</label>
+        <input type="text" id="user"  placeholder="Enter username"></input><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password"></input><br><br>
+       
+ <input type="button" value="login" id="btn"></input>
+    </form>
+    <div>
+    <script>
+       var admincredentials={
+            username:"admin",
+            password:"admin123",
+        }
+        // var adminarr=[];
+        
+
+document.getElementById("btn").addEventListener("click",function(e)
+{
+    e.preventDefault();
+
+    
+        var auser=document.getElementById("user").value;
+        var apassword=document.getElementById("password").value;
+
+        var credentials={
+            username:auser,
+            password:apassword
+        }
+//  var arr=adminarr.push(credentials);
+// console.log(arr);
+if(credentials.username==admincredentials.username && credentials.password==admincredentials.password){
+    localStorage.setItem("credentials",JSON.stringify(credentials));
+    window.location.assign("admin.html");
+}
+else{
+   var error= document.createElement("h4");
+   error.style.marginLeft="40%";
+   error.style.color="red";
+   error.innerText="invalid credentials";
+   document.body.append(error);
+}
+});
+
+
+    </script>
+    
+</body>
+</html>
