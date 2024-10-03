@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn1{
+ border-radius: 50%;
+ height: 50px;
+        }
+        </style>
+</head>
+<body>
+    <button id="btn1">btn1</button>
+   
+    <script>
+  
+//   var i=1;
+//     var a=setInterval(()=>{
+       
+//         console.log(i);
+//        i=i+1;
+//     },1000);
+
+// var colors=setInterval(()=>{
+//     btn1.style.backgroundColor="green"
+// },5000
+// );
+
+// var colors=setInterval(()=>{
+//     btn1.style.backgroundColor="orange"
+// },5000
+// );
+
+var colors=setInterval(function(){
+    var btn1=document.getElementById("btn1");
+
+
+if(btn1.style.backgroundColor=="red"){
+    btn1.style.backgroundColor="orange";  
+}else if(btn1.style.backgroundColor=="orange")
+{
+    btn1.style.backgroundColor="green";
+}else{
+btn1.style.backgroundColor="red"
+}
+},5000);
+    
+
+
+
+
+// var colors = setInterval(function() {
+//     var btn1 = document.getElementById("btn1");
+    
+//     if (btn1.style.backgroundColor == "red") {
+//         btn1.style.backgroundColor = "green";  
+//     } else if (btn1.style.backgroundColor == "green") {
+//         btn1.style.backgroundColor = "orange";
+//     } else {
+//         btn1.style.backgroundColor = "red"; // Reset to red after orange
+//     }
+
+// }, 5000);
+
+
+
+</script>
+</body>
+</html>

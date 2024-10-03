@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,10 +21,10 @@
     <input type="number" id="amount" placeholder="Amount" required>
     <input type="button" id="btn" value="Add">
   </form><br><br>
-  <table >
+  <table id="transactiontable">
     <tr>
-    <th>Description</th>
-    <th>Amount</th>
+    <th id="h1">Description</th>
+    <th id="h2">Amount</th>
     <th>Action</th>
 <tr>
     
@@ -42,8 +42,47 @@
      totalBalance += amount;
             document.getElementById("total").innerText = `TOTAL BALANCE: $${totalBalance}`;
 
+            var table=document.getElementById("transactiontable");
+
+            var row=document.createElement("tr");
+
+            var descdata=document.createElement("td");
+            descdata.innerText=`${desc}`;
+            row.appendChild(descdata);
+
+
+            var amountdata=document.createElement("td");
+            amountdata.innerText=`$${amount}`;
+            row.appendChild(amountdata);
+            table.appendChild(row);
+
+
+            var actiondata=document.createElement("td");
+            
+            var button1=document.createElement("button");
+            button1.innerText="Delete";
+            actiondata.appendChild(button1);
+            row.appendChild(actiondata);
+            table.appendChild(row);
+          let rowamount=amount;
+            var deleting=button1.addEventListener("click",function(e){
+              e.preventDefault();
+
+              totalBalance -=rowamount;
+              
+            
+            document.getElementById("total").innerText = `TOTAL BALANCE: $${totalBalance}`;
+row.remove();
+
+            })
+
+
+
+          
     });
     
     </script>
     </body>
-    </html>
+    </html> 
+
+

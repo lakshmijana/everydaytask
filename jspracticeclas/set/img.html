@@ -1,0 +1,43 @@
+
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg">
+
+   <script>
+
+    var a1 = ["https://i5.walmartimages.com/asr/8baa3751-0658-4aa5-8b68-89c73841e754_1.119af20f942cfb2e8e9d024424b41dba.jpeg", 
+              "https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg"];
+    var cindex = -1;  
+    var img = document.getElementsByTagName("img");
+    var initialSrc = img[0].src;  
+
+    setInterval(cb, 1000);
+
+    function cb() {
+        if (cindex === -1) {
+           
+            img[0].setAttribute("src", initialSrc);
+        } else {
+          
+            img[0].setAttribute("src", a1[cindex]);
+        }
+        
+     
+        cindex++;
+        if (cindex >= a1.length) {
+            cindex = -1;  
+        }
+    }
+   </script>
+  
+</body>
+</html>

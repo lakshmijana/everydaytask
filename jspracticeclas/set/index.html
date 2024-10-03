@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">btn1</button>
+    <button id="btn2">btn2</button>
+    <script>
+// var btn1=document.getElementById("btn1").addEventListener("click",
+// function(){
+//     var i=1;
+//      var b=setInterval(()=>{
+
+// console.log(i);
+// i=i+1
+//     },1000);
+
+//     var btn2=document.getElementById("btn2").addEventListener("click",()=>{
+//         clearInterval(b);
+//     })
+// })
+    
+
+var btn1=document.getElementById("btn1").addEventListener("click",
+function(fun){
+    var i=1;
+     var b=setInterval(()=>{
+
+console.log(i);
+i=i+1
+    },1000);
+   fun(c); 
+});
+var btn2=document.getElementById("btn1").addEventListener("click",
+function(){
+    var c=clearInterval(b)
+});
+
+
+
+
+        </script>
+</body>
+</html>
