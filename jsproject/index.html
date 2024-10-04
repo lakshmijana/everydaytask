@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Poll Platform</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            padding: 20px;
-        }
-        .poll-result {
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Poll Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center">Online Poll Platform</h1>
 
-        <!-- Poll Creation Form -->
-        <div class="card mt-5">
-            <div class="card-body">
-                <h2>Create a Poll</h2>
-                <form id="pollForm">
-                    <div class="mb-3">
-                        <label for="pollTitle" class="form-label">Poll Title</label>
-                        <input type="text" id="pollTitle" class="form-control" placeholder="Enter poll title" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pollOptions" class="form-label">Options (comma-separated)</label>
-                        <input type="text" id="pollOptions" class="form-control" placeholder="Enter options, separated by commas" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Create Poll</button>
-                </form>
-            </div>
-        </div>
+  <div class="container mt-5">
+    <h2>Create a Poll</h2>
+    <form id="pollForm">
+      <div class="mb-3">
+        <label for="pollQuestion" class="form-label">Poll Question</label>
+        <input type="text" id="pollQuestion" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="pollOptions" class="form-label">Poll Options (comma separated)</label>
+        <input type="text" id="pollOptions" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Poll</button>
+    </form>
 
-        <!-- Poll Display Section -->
-        <div class="card mt-5" id="pollCard" style="display: none;">
-            <div class="card-body">
-                <h2 id="pollQuestion"></h2>
-                <form id="voteForm">
-                    <div id="pollOptionsList" class="mb-3">
-                        <!-- Poll options will be dynamically added here -->
-                    </div>
-                    <button type="submit" class="btn btn-success">Vote</button>
-                </form>
-            </div>
-        </div>
+    <hr>
 
-        <!-- Poll Result Display -->
-        <div class="poll-result" id="pollResult" style="display: none;">
-            <h2>Poll Results</h2>
-            <ul id="pollResultsList" class="list-group">
-                <!-- Poll results will be displayed here -->
-            </ul>
-        </div>
-    </div>
+    <h2>Active Poll</h2>
+    <div id="activePoll" class="mb-4"></div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="app.js"></script>
+    <hr>
+
+    <h2>Poll Results</h2>
+    <div id="pollResults"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

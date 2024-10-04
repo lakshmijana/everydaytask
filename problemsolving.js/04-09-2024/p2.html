@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rows = 5;
+let s = "";
+
+// Upper part of the pattern
+for (let i = rows; i >= 1; i--) {
+    s = "";
+    for (let sp = 0; sp < rows - i; sp++) {
+        s += " "; // Adding spaces for alignment
+    }
+    for (let j = i; j >= 1; j--) {
+        s += "* "; // Adding stars with a space
+    }
+    console.log(s);
+}
+
+// Lower part of the pattern
+for (let i = 2; i <= rows; i++) {
+    s = "";
+    for (let sp = 0; sp < rows - i; sp++) {
+        s += " "; // Adding spaces for alignment
+    }
+    for (let j = i; j >= 1; j--) {
+        s += "* "; // Adding stars with a space
+    }
+    console.log(s);
+}
+
+        </script>
+</body>
+</html>

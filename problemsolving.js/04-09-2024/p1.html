@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let rows=5;
+for(i=1;i<=2*rows-1;i++){
+    s="";
+    if(i<=rows){
+        for(j=1;j<=i;j++){
+            s=s+"*"+" "
+        }
+    }else{
+        for(j=2*rows-i;j>=1;j--)
+            s=s+"*"+" "
+        
+    }
+    console.log(s)
+}
+   </script> 
+</body>
+</html>
