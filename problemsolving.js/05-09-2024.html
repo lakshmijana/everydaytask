@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rows = 5;
+for (let i = 1; i <= (2 * rows - 1); i++) {
+    let s = "";
+    let space = (i <= rows) ? rows - i : i - rows;
+    let cols = (i <= rows) ? i : (2 * rows - i);
+
+    // Printing spaces
+    for (let sp = 1; sp <= space; sp++) {
+        s += " ";
+    }
+
+    // Printing stars and spaces between
+    for (let j = 1; j <= cols; j++) {
+        if (j === 1 || j === cols) {
+            s += "* ";
+        } else {
+            s += "  ";
+        }
+    }
+    console.log(s);
+}
+        </script>
+</body>
+</html>
